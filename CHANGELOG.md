@@ -1,1 +1,1 @@
-Initial release
+Initial release v0.1.0
