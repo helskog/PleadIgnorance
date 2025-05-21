@@ -4,7 +4,7 @@ A V Rising server plugin made to make sure players acknowledge the rules before 
 ## Features
 🔁 Force players to acknowledge a message before exiting the spawn cave.<br>
 ⚙️ Customizable header, message and footer<br>
-🖌️ Style text with rich text tags [Unity Documentation](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/StyledText.html)<br>
+🖌️ Style text with rich text tags (check [Unity Documentation](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/StyledText.html))<br>
 
 ## How It Works
 Players must read & acknowledge a custom message shown in chat before being able to leave the spawn cave area. Once the player types .accept in chat they will be able to teleport out of the spawn cave area.
