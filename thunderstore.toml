@@ -1,0 +1,33 @@
+[config]
+schemaVersion = "0.0.1"
+
+[package]
+namespace = "helskog"
+name = "PleadIgnorance"
+versionNumber = "0.1.0"
+description = "Make sure players acknowledge the rules before entering!"
+websiteUrl = "https://github.com/helskog/PleadIgnorance"
+containsNsfwContent = false
+
+[package.dependencies]
+BepInEx-BepInExPack_V_Rising = "1.733.2"
+deca-VampireCommandFramework = "0.10.2"
+
+[build]
+icon = "./logo_256.png"
+readme = "./README.md"
+outdir = "./build"
+
+[[build.copy]]
+source = "./bin/Release/net6.0/PleadIgnorance.dll"
+target = "./PleadIgnorance.dll"
+
+[[build.copy]]
+source = "./CHANGELOG.md"
+target = "./CHANGELOG.md"
+
+[publish]
+communities = ["v-rising"]
+repository = "https://thunderstore.io"
+[publish.categories]
+v-rising = ["server", "mods", "oakveil-update"]
