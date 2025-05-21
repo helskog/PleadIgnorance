@@ -47,7 +47,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: thunderstore packages
-          path: ./build/helskog-VampireStatistics-${{ steps.gitversion.outputs.majorMinorPatch }}.zip
+          path: ./build/helskog-PleadIgnorance-${{ steps.gitversion.outputs.majorMinorPatch }}.zip
 
           retention-days: 1
           compression-level: 0
@@ -61,7 +61,7 @@ jobs:
           fail_on_unmatched_files: true
           prerelease: true
           tag_name: v${{ env.GitVersion_MajorMinorPatch }}
-          files: ./build/helskog-VampireStatistics-${{ steps.gitversion.outputs.majorMinorPatch }}.zip
+          files: ./build/helskog-PleadIgnorance-${{ steps.gitversion.outputs.majorMinorPatch }}.zip
 
       - name: Publish Thunderstore
-        run: tcli publish --config-path ./thunderstore.toml --token ${{ secrets.THUNDERSTORE_SECRET }} --file ./build/helskog-VampireStatistics-${{ steps.gitversion.outputs.majorMinorPatch }}.zip
+        run: tcli publish --config-path ./thunderstore.toml --token ${{ secrets.THUNDERSTORE_SECRET }} --file ./build/helskog-PleadIgnorance-${{ steps.gitversion.outputs.majorMinorPatch }}.zip
